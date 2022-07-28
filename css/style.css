@@ -1,0 +1,321 @@
+*, body, html {
+    padding: 0;
+    margin:0 auto;
+}
+
+body {
+    background: url(../images/slider1.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    height: 80px;
+    width:100%;
+    background: rgba(255,255,255,0.25);
+}
+header ul {
+    width:65%;
+    display: inline-block;
+    padding: 0;
+    margin: 40px 50px 0 0;
+    float: right;
+}
+header ul li {
+    display: inline;
+    float: left;
+    margin: 2px;
+    list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.container {
+    width: 100% !important;
+    margin: 0 auto;
+    min-height: auto;
+    display: inline-block;  
+}
+#logo {
+    float: left;
+    margin: 10px;
+    width: 100%;
+    max-width: 150px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: #2a852e;
+    text-shadow: 0 2px #090c19;
+}
+/*home*/
+#homeContent{
+    margin: 60px auto;
+    background: rgba(255,255,255,0.6);
+    width: 90%;
+    border: 5px solid #ffd60e;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 2%;
+}
+#homeContent h1 {
+    padding: 5px 20px;
+    color: #000;
+}
+#homeContent p {
+    padding: 5px 25px;
+    color: #000;
+    line-height: 25px;
+}
+
+/*cusins*/
+#selectCuisin {
+    float: left;
+    margin: 60px 0 0 5%;
+    background: rgba(255,255,255,0.6);
+    width: 20%;
+    border: 5px solid #ffd60e;
+    max-width: 300px;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px 0;
+}
+#selectCuisin:focus {
+    outline: 0;
+}
+#selectCuisin option {
+    display: block;
+    width: 80%;
+    background: #ffd60e;
+    clear: both;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #e3c94a;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    margin: 5px auto;
+    transition: 0.5s;
+}
+#selectCuisin option:Hover {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: rgb(50 139 28 / 70%);
+    color: #fff;
+}
+#selectCuisin option:Hover {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: rgb(50 139 28 / 70%);
+    color: #fff;
+}
+#selectCuisin option.active:focus,
+#selectCuisin option.active {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(50 139 28 / 70%) !important;
+    color: #fff;
+}
+#displayCuisin {
+    float: right;
+    margin: 60px 5% 0 0px;
+    background: rgba(255,255,255,0.8);
+    width: 65%;
+    border: 5px solid #ffd60e;
+    max-width: 800px;
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 20px 0;
+}
+.item-desc {
+    display: none;
+}
+
+.item-desc h1 {
+    padding: 5px 20px;
+    color: #000;
+}
+.item-desc p {
+    padding: 5px 25px;
+    color: #000;
+    line-height: 25px;
+}
+/*Find Restaurant*/
+select#selectResraurant {
+    width: 25%;
+    padding: 10px 20px;
+    outline: 0;
+    margin: 10px 20px;
+    border: 2px solid #ffd60e;
+    border-radius: 2px;
+}
+select#selectResraurant option{
+    width: 25%;
+    padding: 5px;
+}
+select#selectResraurant:Focus {
+    outline: 0;
+}
+
+select#selectAmbience {
+    width: 25%;
+    padding: 10px 20px;
+    outline: 0;
+    margin: 10px 20px;
+    border: 2px solid #ffd60e;
+    border-radius: 2px;
+}
+select#selectAmbience option{
+    width: 25%;
+    padding: 5px;
+    cursor: pointer;
+}
+select#selectAmbience:Focus {
+    outline: 0;
+}
+
+select#selectDiscount {
+    width: 25%;
+    padding: 10px 20px;
+    outline: 0;
+    margin: 10px 20px;
+    border: 2px solid #ffd60e;
+    border-radius: 2px;
+}
+select#selectDiscount option{
+    width: 25%;
+    padding: 5px;
+    cursor: pointer;
+}
+select#selectDiscount:Focus {
+    outline: 0;
+}
+button#findYourRestaurants {
+    padding: 7px 20px;
+    outline: 0;
+    margin: 10px 20px;
+    border: 2px solid #ffd60e;
+    border-radius: 2px;
+    background: rgb(50 139 28 / 70%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+/*DIy*/
+.showRecipies {
+    width: 96%;
+}
+.recipies {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+.recipies li {
+    float: left;
+    display: inline;
+    padding: 0px;
+    margin: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 60px;
+    height: 60px;
+    border: 5px solid #ff0654;
+}
+.recipe img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.recipeData {
+    clear: both;
+    border-top: 5px solid #607d8b;
+    margin: 20px 0 20px 0;
+    display: none;
+}
+.recipeData h2 {
+    padding: 10px 0px;
+    color: #000;
+}
+.recipeData p {
+    padding: 5px 25px;
+    color: #000;
+    line-height: 25px;
+}
+ul.ingradients {
+    display: inline-block;
+}
+ul.ingradients li {
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 25px;
+    padding: 0px 10px;
+}
+#homeContent p.making {
+    padding: 5px 10px;
+    color: #000;
+    line-height: 25px;
+}
+/*KYD*/
+.diet {
+    display: none;
+}
+.restaurantDetails h2 {
+    padding: 10px 20px;
+    color: #ff5722;
+}
+.restaurantDetails p {
+    padding: 5px 25px;
+    color: #000;
+    line-height: 25px;
+}
+.diet {
+    width: 95%;
+    margin: 20px auto;
+    border-top: 2px dashed #4caf50;
+    padding: 1% 2px;
+}
+.rest {
+    display: inline-block;
+    border: 2px solid #ffd60e;
+    width: 95%;
+    margin: 2%;
+}
+.rest li{
+    display: inline-block;
+    padding: 5px 10px;
+    clear: both;;
+    display: block;
+    list-style: none;
+    color: #795548;
+}
+.rest li span {
+    color: #ff5722;
+}
+form#resForm {
+    display: block;
+    width: 96%;
+    margin: 10px auto;
+}
+form#resForm label {
+    color: #6d6060;
+    font-weight: 600;
+}
+form#resForm input {
+    padding: 0 5px;
+    margin: 0 2px 0 20px;
+}
+
